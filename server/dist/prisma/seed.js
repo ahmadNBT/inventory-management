@@ -1,8 +1,9 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const { PrismaClient } = require("@prisma/client");
-const fs = require("fs");
-const path = require("path");
+// const { PrismaClient } = require("@prisma/client");
+// const fs = require("fs");
+// const path = require("path");
+import { PrismaClient } from "@prisma/client";
+import fs from "fs";
+import path from "path";
 const prisma = new PrismaClient();
 async function deleteAllData(orderedFileNames) {
     const modelNames = orderedFileNames.map((fileName) => {
