@@ -45,7 +45,7 @@ export const getDashboardMetrics = async (req, res) => {
         });
     }
     catch (error) {
-        res.status(500).json({ message: "Error retrieving dashboard metrics" });
+        res.status(500).json({ message: "Error retrieving dashboard metrics", data: null });
     }
 };
 //# sourceMappingURL=dashboardController.js.map
